@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class ArrowScript : MonoBehaviour
 {
+    //The arrow has the right orientation
     public float speed = 1;
 
-    private Vector3 direction;
 
-    // Update is called once per frame
     void Update()
     {
+        // Move the arrow
         transform.position += transform.right * Time.deltaTime * speed;
     }
 }

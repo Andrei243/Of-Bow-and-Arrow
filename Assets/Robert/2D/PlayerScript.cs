@@ -7,6 +7,7 @@ public class PlayerScript : MonoBehaviour
     public GameObject cameraP;
     public float moveSpeed = 4;
     public float jumpForce = 8;
+    public float reloadSpeed = 5;
     public GameObject arrow;
 
     private GameObject Player;
@@ -21,6 +22,8 @@ public class PlayerScript : MonoBehaviour
     private bool isGrounded;
     private bool facingRight;
     private int groundLayer;
+    private int mouseClickLayer;
+    private float reloadTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -38,8 +41,10 @@ public class PlayerScript : MonoBehaviour
         jumpSpeed = Vector2.up * jumpForce;
 
         isGrounded = false;
-        groundLayer = 1<<8;
+        groundLayer = 1 << 8;
+        mouseClickLayer = 1 << 9;
         facingRight = true;
+        reloadTimer = 0;
     }
 
     void Update()
@@ -47,13 +52,21 @@ public class PlayerScript : MonoBehaviour
         cameraP.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y,cameraP.transform.position.z);
         State();
         Animations();
-        Movement();
+        Actions();
+
+        if(Input.GetKeyDown(KeyCode.U))
+        {
+            Destroy(gameObject, anim.GetCurrentAnimatorStateInfo(0).length);
+            anim.SetBool("dead", true);
+        }
     }
 
     void State()
     {
         if (playerCircleCollider.IsTouchingLayers(groundLayer))
             isGrounded = true;
+        if (reloadTimer > 0)
+            reloadTimer -= Time.deltaTime;
     }
 
     void Animations()
@@ -73,17 +86,45 @@ public class PlayerScript : MonoBehaviour
 
     }
 
-    void Movement()
+    IEnumerator Shoot(float time, float angle)
     {
+         yield return new WaitForSeconds(time);
+        Instantiate(arrow, playerTransform.position, Quaternion.Euler(0, 0, angle));
+
+    }
+
+    void Actions()
+    {
+
+        if (Input.GetMouseButton(0) && reloadTimer <= 0)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            float angle = 0;
+            if (Physics.Raycast(ray, out hit, mouseClickLayer))
+                angle = Mathf.Atan2(hit.point.y - transform.position.y, hit.point.x - transform.position.x) * Mathf.Rad2Deg;
+            if (angle < 0)
+                angle = 360 + angle;
+
+            if (facingRight && angle > 90 && angle < 270)
+                Flip(true);
+
+            if (!facingRight && !(angle > 90 && angle < 270))
+                Flip(false);
+
+            anim.SetTrigger("shoot");
+            StartCoroutine(Shoot(anim.GetCurrentAnimatorStateInfo(0).length, angle));
+            reloadTimer = reloadSpeed + anim.GetCurrentAnimatorStateInfo(0).length;
+
+        }
+
         velocity = Vector2.zero;
 
         if (Input.GetKey(KeyCode.A))
         {
             if(facingRight)
-            {
-                Flip();
-                facingRight = false;
-            }
+                Flip(true);
+
             velocity += leftSpeed;
         }
 
@@ -91,10 +132,8 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             if (!facingRight)
-            {
-                Flip();
-                facingRight = true;
-            }
+                Flip(false);
+            
             velocity += rightSpeed;
         }
 
@@ -106,22 +145,13 @@ public class PlayerScript : MonoBehaviour
 
         playerRigidbody.velocity = new Vector2(velocity.x, velocity.y + playerRigidbody.velocity.y);
 
-        if(Input.GetMouseButton(0))
-        {
-            Vector2 positionOnScreen = Camera.main.WorldToViewportPoint(playerTransform.position);
-            Vector2 mouseOnScreen =Camera.main.ScreenToViewportPoint(Input.mousePosition);
-            positionOnScreen -= new Vector2(0.5f, 0.5f);
-            mouseOnScreen -= new Vector2(0.5f, 0.5f);
-            print(positionOnScreen.ToString() + mouseOnScreen.ToString());
-            float angle = Mathf.Atan2(positionOnScreen.y - mouseOnScreen.y, positionOnScreen.x - mouseOnScreen.x) * Mathf.Rad2Deg;
- 
-            Instantiate(arrow, playerTransform.position, Quaternion.Euler(0,0,angle + 145f));
-        }
+        
         
     }
 
-    void Flip()
+    void Flip(bool flip)
     {
-        playerSprite.flipX = !playerSprite.flipX;
+        playerSprite.flipX = flip;
+        facingRight = !playerSprite.flipX;
     }
 }
