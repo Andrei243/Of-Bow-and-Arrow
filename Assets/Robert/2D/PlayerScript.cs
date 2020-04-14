@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    public GameObject cameraP;
+
     public float moveSpeed = 4;
     public float jumpForce = 8;
     public float reloadSpeed = 5;
     public GameObject arrow;
+    public GameObject cameraP;
 
     private GameObject Player;
     private Transform playerTransform;
@@ -25,9 +26,9 @@ public class PlayerScript : MonoBehaviour
     private int mouseClickLayer;
     private float reloadTimer;
 
-    // Start is called before the first frame update
     void Start()
     {
+        //Get all the neded components
         Player = gameObject;
         playerTransform = Player.transform;
         playerRigidbody = Player.GetComponent<Rigidbody2D>();
@@ -36,29 +37,29 @@ public class PlayerScript : MonoBehaviour
         playerSprite = Player.GetComponent<SpriteRenderer>();
         anim = Player.GetComponent<Animator>();
 
+        //Calculate movement vectors
         leftSpeed = Vector2.left * moveSpeed;
         rightSpeed = Vector2.right * moveSpeed;
         jumpSpeed = Vector2.up * jumpForce;
 
-        isGrounded = false;
+        //Put Layers and bools;
         groundLayer = 1 << 8;
         mouseClickLayer = 1 << 9;
-        facingRight = true;
+        isGrounded = false; // The player is spawned at a small height in the air
+        facingRight = true; // and facing right
         reloadTimer = 0;
     }
 
     void Update()
     {
+        //Update the camera pos ( needs work)
         cameraP.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y,cameraP.transform.position.z);
+
+        //Update player state
         State();
         Animations();
         Actions();
 
-        if(Input.GetKeyDown(KeyCode.U))
-        {
-            Destroy(gameObject, anim.GetCurrentAnimatorStateInfo(0).length);
-            anim.SetBool("dead", true);
-        }
     }
 
     void State()
@@ -153,5 +154,11 @@ public class PlayerScript : MonoBehaviour
     {
         playerSprite.flipX = flip;
         facingRight = !playerSprite.flipX;
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject, anim.GetCurrentAnimatorStateInfo(0).length);
+        anim.SetBool("dead", true);
     }
 }
