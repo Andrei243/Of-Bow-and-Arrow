@@ -4,6 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Arrow
+  - Flammable
+  - SimpleStoneWall
+  - DestructiblePlankWall
+  - Flaming
+  - Floor
+  - FountainAreaOfEffect
+  - Wall
+  - StoneWallWithTorch
+  - TorchAreaOfEffect
+  - Wet
   - PlayerArrow
   - Enemy
   - EnemyArrow

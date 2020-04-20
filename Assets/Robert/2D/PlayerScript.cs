@@ -65,7 +65,10 @@ public class PlayerScript : MonoBehaviour
     void State()
     {
         if (playerCircleCollider.IsTouchingLayers(groundLayer))
-            isGrounded = true;
+            if (!isGrounded)
+            {
+                isGrounded = true;
+            }
         if (reloadTimer > 0)
             reloadTimer -= Time.deltaTime;
     }
