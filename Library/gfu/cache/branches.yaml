@@ -13,19 +13,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-04-14T18:17:25.975+03:00
-  initializedAtString: 2020-04-14T18:17:25.775+03:00
+  lastUpdatedAtString: 2020-04-21T00:10:05.873+03:00
+  initializedAtString: 2020-04-21T00:10:05.855+03:00
   localBranches:
+  - name: calin-branch
+    tracking: origin/calin-branch
   - name: master
     tracking: origin/master
-  - name: robert-branch-2D
-    tracking: origin/robert-branch-2D
+  - name: rober-branch-2D
+    tracking: origin/rober-branch-2D
   - name: robert-branch-3D
     tracking: origin/robert-branch-3D
   remoteBranches:
+  - name: origin/calin
+    tracking: '[None]'
   - name: origin/calin-branch
     tracking: '[None]'
-  - name: origin/HEAD
+  - name: origin/master
     tracking: '[None]'
   - name: origin/rober-branch-2D
     tracking: '[None]'
@@ -41,16 +45,22 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - calin-branch
     - master
-    - robert-branch-2D
+    - rober-branch-2D
     - robert-branch-3D
     values:
+    - name: calin-branch
+      remote:
+        name: origin
+        url: https://github.com/Andrei243/Of-Bow-and-Arrow.git
+      trackingBranch: calin-branch
     - name: master
       remote:
         name: origin
         url: https://github.com/Andrei243/Of-Bow-and-Arrow.git
       trackingBranch: master
-    - name: robert-branch-2D
+    - name: rober-branch-2D
       remote:
         name: origin
         url: https://github.com/Andrei243/Of-Bow-and-Arrow.git
@@ -65,18 +75,24 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
+      - calin
       - calin-branch
-      - HEAD
+      - master
       - rober-branch-2D
       - robert-branch-3D
     subKeyValues:
     - Values:
+      - name: calin
+        remote:
+          name: origin
+          url: https://github.com/Andrei243/Of-Bow-and-Arrow.git
+        trackingBranch: 
       - name: calin-branch
         remote:
           name: origin
           url: https://github.com/Andrei243/Of-Bow-and-Arrow.git
         trackingBranch: 
-      - name: HEAD
+      - name: master
         remote:
           name: origin
           url: https://github.com/Andrei243/Of-Bow-and-Arrow.git
