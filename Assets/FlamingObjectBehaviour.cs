@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FlamingObjectBehaviour : MonoBehaviour
 {
-    public TimeSpan TimeUntilBurnt = new TimeSpan(0, 0, 10);
+    public int SecondsFromBurntTillDestroyed = 10;
     // Start is called before the first frame update
     private ObjectState state;
     private DateTime MomentBurnt;
@@ -43,6 +43,12 @@ public class FlamingObjectBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(state == ObjectState.OnFire)
+        {
+            if((DateTime.Now - MomentBurnt).TotalSeconds > SecondsFromBurntTillDestroyed)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }

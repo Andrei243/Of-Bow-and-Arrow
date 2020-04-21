@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-04-20T21:37:03.217+03:00
-  initializedAtString: 2020-04-20T21:37:03.217+03:00
+  lastUpdatedAtString: 2020-04-21T20:04:26.996+03:00
+  initializedAtString: 2020-04-21T20:04:26.996+03:00
   currentGitRemote:
     name: origin
     url: https://github.com/Andrei243/Of-Bow-and-Arrow.git
