@@ -3,18 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Arrow
-  - Flammable
-  - SimpleStoneWall
-  - DestructiblePlankWall
-  - Flaming
-  - Floor
-  - FountainAreaOfEffect
-  - Wall
-  - StoneWallWithTorch
-  - TorchAreaOfEffect
-  - Wet
+  tags: []
   layers:
   - Default
   - TransparentFX

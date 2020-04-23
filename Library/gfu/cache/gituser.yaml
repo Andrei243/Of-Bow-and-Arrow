@@ -13,14 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 8
-<<<<<<< HEAD
   lastUpdatedAtString: 2020-04-14T18:35:06.637+03:00
   initializedAtString: 2020-04-14T18:35:06.637+03:00
   gitName: GreenReach
   gitEmail: robert.baloo@gmail.com
-=======
-  lastUpdatedAtString: 2020-04-20T21:39:00.604+03:00
-  initializedAtString: 2020-04-20T21:39:00.604+03:00
-  gitName: Andrei243
-  gitEmail: andrei243.nma@gmail.com
->>>>>>> aff275c64fef1937f6e523b04959b87efd6f53db
