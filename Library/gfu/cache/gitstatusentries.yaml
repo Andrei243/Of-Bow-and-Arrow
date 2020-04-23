@@ -13,48 +13,510 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-04-14T18:35:03.297+03:00
-  initializedAtString: 2020-04-14T18:35:03.297+03:00
+  lastUpdatedAtString: 2020-04-14T18:26:24.338+03:00
+  initializedAtString: 2020-04-14T18:17:25.115+03:00
   entries:
+  - path: .vs\Of-Bow-and-Arrow\v15\Server\sqlite3\storage.ide-shm
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\.vs\Of-Bow-and-Arrow\v15\Server\sqlite3\storage.ide-shm
+    projectPath: .vs\Of-Bow-and-Arrow\v15\Server\sqlite3\storage.ide-shm
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: .vs\Of-Bow-and-Arrow\v15\Server\sqlite3\storage.ide-wal
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\.vs\Of-Bow-and-Arrow\v15\Server\sqlite3\storage.ide-wal
+    projectPath: .vs\Of-Bow-and-Arrow\v15\Server\sqlite3\storage.ide-wal
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Robert\2D\PlayerScript.cs
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Assets\Robert\2D\PlayerScript.cs
+    projectPath: Assets\Robert\2D\PlayerScript.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Robert\2D\Prefabs\MouseClickPlane.prefab
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Assets\Robert\2D\Prefabs\MouseClickPlane.prefab
+    projectPath: Assets\Robert\2D\Prefabs\MouseClickPlane.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Robert\2D\Prefabs\MouseClickPlane.prefab.meta
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Assets\Robert\2D\Prefabs\MouseClickPlane.prefab.meta
+    projectPath: Assets\Robert\2D\Prefabs\MouseClickPlane.prefab.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Assets\Robert\2D\Prefabs\Player.prefab
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Assets\Robert\2D\Prefabs\Player.prefab
+    projectPath: Assets\Robert\2D\Prefabs\Player.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Assets\Robert\2D\RobertScene.unity
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Assets\Robert\2D\RobertScene.unity
+    projectPath: Assets\Robert\2D\RobertScene.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library\ArtifactDB
     fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\ArtifactDB
     projectPath: Library\ArtifactDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Library\Artifacts\01\011b0eac017324dea86ee1a9f72763d6
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\01\011b0eac017324dea86ee1a9f72763d6
+    projectPath: Library\Artifacts\01\011b0eac017324dea86ee1a9f72763d6
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\05\053b63e5b6727ebbeba21f479cc52780
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\05\053b63e5b6727ebbeba21f479cc52780
+    projectPath: Library\Artifacts\05\053b63e5b6727ebbeba21f479cc52780
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\08\08df062bbd6aab06d3e24fdf73ef1d8c
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\08\08df062bbd6aab06d3e24fdf73ef1d8c
+    projectPath: Library\Artifacts\08\08df062bbd6aab06d3e24fdf73ef1d8c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\0a\0a411bb863932ffe23d9580421debcee
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\0a\0a411bb863932ffe23d9580421debcee
+    projectPath: Library\Artifacts\0a\0a411bb863932ffe23d9580421debcee
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\0b\0b4e7bfac8d8d0869ffd909e08be9b5b
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\0b\0b4e7bfac8d8d0869ffd909e08be9b5b
+    projectPath: Library\Artifacts\0b\0b4e7bfac8d8d0869ffd909e08be9b5b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\0b\0bd66aac390ce19b01925e26467f01bf
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\0b\0bd66aac390ce19b01925e26467f01bf
+    projectPath: Library\Artifacts\0b\0bd66aac390ce19b01925e26467f01bf
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\11\11c5f0198178216871ed1a988b460873
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\11\11c5f0198178216871ed1a988b460873
+    projectPath: Library\Artifacts\11\11c5f0198178216871ed1a988b460873
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\13\1345c7861b14b4931d67aa6a876293c4
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\13\1345c7861b14b4931d67aa6a876293c4
+    projectPath: Library\Artifacts\13\1345c7861b14b4931d67aa6a876293c4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\14\141f995149e73100ecd9e884dfbd3ebd
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\14\141f995149e73100ecd9e884dfbd3ebd
+    projectPath: Library\Artifacts\14\141f995149e73100ecd9e884dfbd3ebd
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Library\Artifacts\15\15f9fff0a1baf6c0f5895c3caf51882a
     fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\15\15f9fff0a1baf6c0f5895c3caf51882a
     projectPath: Library\Artifacts\15\15f9fff0a1baf6c0f5895c3caf51882a
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: Library\Artifacts\30\30103fc1efc7cb5a8ebdffa5d5d6987e
-    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\30\30103fc1efc7cb5a8ebdffa5d5d6987e
-    projectPath: Library\Artifacts\30\30103fc1efc7cb5a8ebdffa5d5d6987e
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\18\18c8d0350cb86122ddddd69fab99fa1b
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\18\18c8d0350cb86122ddddd69fab99fa1b
+    projectPath: Library\Artifacts\18\18c8d0350cb86122ddddd69fab99fa1b
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Library\Artifacts\37\374344b1d011ed17da68b2f47d909e38
-    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\37\374344b1d011ed17da68b2f47d909e38
-    projectPath: Library\Artifacts\37\374344b1d011ed17da68b2f47d909e38
+  - path: Library\Artifacts\1a\1a8610490e293c59101a254f13894025
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\1a\1a8610490e293c59101a254f13894025
+    projectPath: Library\Artifacts\1a\1a8610490e293c59101a254f13894025
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\1e\1e92d231f0de07e0b1a58d4fde5d5ef1
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\1e\1e92d231f0de07e0b1a58d4fde5d5ef1
+    projectPath: Library\Artifacts\1e\1e92d231f0de07e0b1a58d4fde5d5ef1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\26\26e2328949143fe3061a7e41c04efb01
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\26\26e2328949143fe3061a7e41c04efb01
+    projectPath: Library\Artifacts\26\26e2328949143fe3061a7e41c04efb01
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\28\287faa38cc2471122216e31a4699b82c
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\28\287faa38cc2471122216e31a4699b82c
+    projectPath: Library\Artifacts\28\287faa38cc2471122216e31a4699b82c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\29\29636eac1998dd878503106b604a2af1
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\29\29636eac1998dd878503106b604a2af1
+    projectPath: Library\Artifacts\29\29636eac1998dd878503106b604a2af1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\2f\2fc62aa610e26a5a88101efcae77b163
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\2f\2fc62aa610e26a5a88101efcae77b163
+    projectPath: Library\Artifacts\2f\2fc62aa610e26a5a88101efcae77b163
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\31\31c42e3bf1f7e410e41e80cc321a8831
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\31\31c42e3bf1f7e410e41e80cc321a8831
+    projectPath: Library\Artifacts\31\31c42e3bf1f7e410e41e80cc321a8831
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\32\32d6d65f70724b90a5dbf7f33ab3fc4f
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\32\32d6d65f70724b90a5dbf7f33ab3fc4f
+    projectPath: Library\Artifacts\32\32d6d65f70724b90a5dbf7f33ab3fc4f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\36\369130d90c88b3b15349451932995b19
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\36\369130d90c88b3b15349451932995b19
+    projectPath: Library\Artifacts\36\369130d90c88b3b15349451932995b19
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\39\390eb4ab430e0de206a6b7b63b3426cd
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\39\390eb4ab430e0de206a6b7b63b3426cd
+    projectPath: Library\Artifacts\39\390eb4ab430e0de206a6b7b63b3426cd
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\Artifacts\45\45771be747970a0b53bc9ec2d1ffb4a4
-    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\45\45771be747970a0b53bc9ec2d1ffb4a4
-    projectPath: Library\Artifacts\45\45771be747970a0b53bc9ec2d1ffb4a4
+  - path: Library\Artifacts\39\39fd042953be04e948203a63a4ca7385
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\39\39fd042953be04e948203a63a4ca7385
+    projectPath: Library\Artifacts\39\39fd042953be04e948203a63a4ca7385
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Library\Artifacts\60\6055f8b6607b214a44f57568a43dbbf2
-    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\60\6055f8b6607b214a44f57568a43dbbf2
-    projectPath: Library\Artifacts\60\6055f8b6607b214a44f57568a43dbbf2
+  - path: Library\Artifacts\3e\3e15980b7304d366757652f2b2c70111
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\3e\3e15980b7304d366757652f2b2c70111
+    projectPath: Library\Artifacts\3e\3e15980b7304d366757652f2b2c70111
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Library\Artifacts\75\75fa4c4c4a81c8c1cd41fc4f732d55c9
-    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\75\75fa4c4c4a81c8c1cd41fc4f732d55c9
-    projectPath: Library\Artifacts\75\75fa4c4c4a81c8c1cd41fc4f732d55c9
+  - path: Library\Artifacts\3f\3fc14531c53dfeb25ac7f5524893ba31
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\3f\3fc14531c53dfeb25ac7f5524893ba31
+    projectPath: Library\Artifacts\3f\3fc14531c53dfeb25ac7f5524893ba31
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\3f\3ff96019b6a84bba422a0848ad4a0d84
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\3f\3ff96019b6a84bba422a0848ad4a0d84
+    projectPath: Library\Artifacts\3f\3ff96019b6a84bba422a0848ad4a0d84
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\40\40bf10e7bf01103e1ec9d4c38b41d763
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\40\40bf10e7bf01103e1ec9d4c38b41d763
+    projectPath: Library\Artifacts\40\40bf10e7bf01103e1ec9d4c38b41d763
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\42\428d07516ec6ec8ba9eb3390cd928b44
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\42\428d07516ec6ec8ba9eb3390cd928b44
+    projectPath: Library\Artifacts\42\428d07516ec6ec8ba9eb3390cd928b44
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\44\44200b08de0656e07ba31c5fc3354e02
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\44\44200b08de0656e07ba31c5fc3354e02
+    projectPath: Library\Artifacts\44\44200b08de0656e07ba31c5fc3354e02
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\44\44f601d5fd5c24efd44600944b5c5dd7
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\44\44f601d5fd5c24efd44600944b5c5dd7
+    projectPath: Library\Artifacts\44\44f601d5fd5c24efd44600944b5c5dd7
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\44\44fc692fddd46df2ea3f992d6d190d36
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\44\44fc692fddd46df2ea3f992d6d190d36
+    projectPath: Library\Artifacts\44\44fc692fddd46df2ea3f992d6d190d36
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\46\46b3c91d2d98cfefd715b1ac2d00a603
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\46\46b3c91d2d98cfefd715b1ac2d00a603
+    projectPath: Library\Artifacts\46\46b3c91d2d98cfefd715b1ac2d00a603
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\47\47d85c635ad1eacf6719351a75b07393
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\47\47d85c635ad1eacf6719351a75b07393
+    projectPath: Library\Artifacts\47\47d85c635ad1eacf6719351a75b07393
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\49\49cf5a0bff4aaee5bc0c24b047b20a13
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\49\49cf5a0bff4aaee5bc0c24b047b20a13
+    projectPath: Library\Artifacts\49\49cf5a0bff4aaee5bc0c24b047b20a13
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\4b\4b12f27f7efb24ca7302be5b1a3986d3
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\4b\4b12f27f7efb24ca7302be5b1a3986d3
+    projectPath: Library\Artifacts\4b\4b12f27f7efb24ca7302be5b1a3986d3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\4b\4bd239f3cf351493c9851075c674d3c9
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\4b\4bd239f3cf351493c9851075c674d3c9
+    projectPath: Library\Artifacts\4b\4bd239f3cf351493c9851075c674d3c9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\4c\4ce6e9027e0973075feab46cdc7b3f1b
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\4c\4ce6e9027e0973075feab46cdc7b3f1b
+    projectPath: Library\Artifacts\4c\4ce6e9027e0973075feab46cdc7b3f1b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\4f\4f2fbb4ac9b62494ade5090a4fe64f5a
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\4f\4f2fbb4ac9b62494ade5090a4fe64f5a
+    projectPath: Library\Artifacts\4f\4f2fbb4ac9b62494ade5090a4fe64f5a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\53\53df27092910f3384f4c788b6414a659
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\53\53df27092910f3384f4c788b6414a659
+    projectPath: Library\Artifacts\53\53df27092910f3384f4c788b6414a659
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\56\568792610f19498a1cdcc4b3500a095e
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\56\568792610f19498a1cdcc4b3500a095e
+    projectPath: Library\Artifacts\56\568792610f19498a1cdcc4b3500a095e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\58\5814220ea104a12ab13d1f0d1edfe907
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\58\5814220ea104a12ab13d1f0d1edfe907
+    projectPath: Library\Artifacts\58\5814220ea104a12ab13d1f0d1edfe907
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\58\588c816026576a480536591eb589b580
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\58\588c816026576a480536591eb589b580
+    projectPath: Library\Artifacts\58\588c816026576a480536591eb589b580
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\58\58e77a1596920ab3df26d8da644fd109
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\58\58e77a1596920ab3df26d8da644fd109
+    projectPath: Library\Artifacts\58\58e77a1596920ab3df26d8da644fd109
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\59\59a998e0e4f6caddfd844b2e4faa7220
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\59\59a998e0e4f6caddfd844b2e4faa7220
+    projectPath: Library\Artifacts\59\59a998e0e4f6caddfd844b2e4faa7220
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\5f\5fac37deedd285c218eb5dc20f6a5b10
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\5f\5fac37deedd285c218eb5dc20f6a5b10
+    projectPath: Library\Artifacts\5f\5fac37deedd285c218eb5dc20f6a5b10
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\61\617a96640f7b5a9fc296719d02452435
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\61\617a96640f7b5a9fc296719d02452435
+    projectPath: Library\Artifacts\61\617a96640f7b5a9fc296719d02452435
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\63\6340315f2296640a144065a949ada49f
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\63\6340315f2296640a144065a949ada49f
+    projectPath: Library\Artifacts\63\6340315f2296640a144065a949ada49f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\6a\6af88c40ca10ad207c7ecbfb60dd98b0
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\6a\6af88c40ca10ad207c7ecbfb60dd98b0
+    projectPath: Library\Artifacts\6a\6af88c40ca10ad207c7ecbfb60dd98b0
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\6b\6b613dc90b3fc4b0cf93cea75dd343f5
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\6b\6b613dc90b3fc4b0cf93cea75dd343f5
+    projectPath: Library\Artifacts\6b\6b613dc90b3fc4b0cf93cea75dd343f5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\6e\6e0a351870752d12e6e5903578a6ab97
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\6e\6e0a351870752d12e6e5903578a6ab97
+    projectPath: Library\Artifacts\6e\6e0a351870752d12e6e5903578a6ab97
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\6f\6f514451399bf5523625bb48562a1dd2
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\6f\6f514451399bf5523625bb48562a1dd2
+    projectPath: Library\Artifacts\6f\6f514451399bf5523625bb48562a1dd2
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\6f\6ffa3d25c194a1f1832b25faa9106dee
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\6f\6ffa3d25c194a1f1832b25faa9106dee
+    projectPath: Library\Artifacts\6f\6ffa3d25c194a1f1832b25faa9106dee
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\70\704204bb2c903f50a48f78a6a0bbbbe8
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\70\704204bb2c903f50a48f78a6a0bbbbe8
+    projectPath: Library\Artifacts\70\704204bb2c903f50a48f78a6a0bbbbe8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\70\70a73f8f5904f44a1bfb6d5a303b5e9e
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\70\70a73f8f5904f44a1bfb6d5a303b5e9e
+    projectPath: Library\Artifacts\70\70a73f8f5904f44a1bfb6d5a303b5e9e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\75\758a4557189ccaeaa7643c6505329b49
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\75\758a4557189ccaeaa7643c6505329b49
+    projectPath: Library\Artifacts\75\758a4557189ccaeaa7643c6505329b49
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\78\78a96d1ccc3ad38087aaf7e2391fa22a
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\78\78a96d1ccc3ad38087aaf7e2391fa22a
+    projectPath: Library\Artifacts\78\78a96d1ccc3ad38087aaf7e2391fa22a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\7a\7a497267f217b1273dd5b7eeabac8284
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\7a\7a497267f217b1273dd5b7eeabac8284
+    projectPath: Library\Artifacts\7a\7a497267f217b1273dd5b7eeabac8284
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\7a\7ad30aaf8b3380b0c7129c23965cea39
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\7a\7ad30aaf8b3380b0c7129c23965cea39
+    projectPath: Library\Artifacts\7a\7ad30aaf8b3380b0c7129c23965cea39
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\7b\7bdfc0abef08ecd1754d7c45dddcd5e7
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\7b\7bdfc0abef08ecd1754d7c45dddcd5e7
+    projectPath: Library\Artifacts\7b\7bdfc0abef08ecd1754d7c45dddcd5e7
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\80\809bbd5295e457b98c182c829a2621cd
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\80\809bbd5295e457b98c182c829a2621cd
+    projectPath: Library\Artifacts\80\809bbd5295e457b98c182c829a2621cd
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\81\81167476ba127f73bcdc8f9b9179240a
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\81\81167476ba127f73bcdc8f9b9179240a
+    projectPath: Library\Artifacts\81\81167476ba127f73bcdc8f9b9179240a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\82\82bf6e97dfd43a13662ac52b396aec0d
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\82\82bf6e97dfd43a13662ac52b396aec0d
+    projectPath: Library\Artifacts\82\82bf6e97dfd43a13662ac52b396aec0d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\88\88af1fbb8a967d60009647fc92ba77b8
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\88\88af1fbb8a967d60009647fc92ba77b8
+    projectPath: Library\Artifacts\88\88af1fbb8a967d60009647fc92ba77b8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\8a\8a7c856670ebb10b9e84b6853eec1515
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\8a\8a7c856670ebb10b9e84b6853eec1515
+    projectPath: Library\Artifacts\8a\8a7c856670ebb10b9e84b6853eec1515
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\8c\8c704d8e5453b88001cf6a019e0df3e2
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\8c\8c704d8e5453b88001cf6a019e0df3e2
+    projectPath: Library\Artifacts\8c\8c704d8e5453b88001cf6a019e0df3e2
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\93\935d192c4832590ce65edc77fe0b348f
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\93\935d192c4832590ce65edc77fe0b348f
+    projectPath: Library\Artifacts\93\935d192c4832590ce65edc77fe0b348f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\93\936bf07aca090fac12769f66b9355d1f
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\93\936bf07aca090fac12769f66b9355d1f
+    projectPath: Library\Artifacts\93\936bf07aca090fac12769f66b9355d1f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\93\93883b1e79103f0e4ec47c154ccb8bfe
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\93\93883b1e79103f0e4ec47c154ccb8bfe
+    projectPath: Library\Artifacts\93\93883b1e79103f0e4ec47c154ccb8bfe
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\94\940ad0c1c64a4d5039c0e8c9f5ebdf67
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\94\940ad0c1c64a4d5039c0e8c9f5ebdf67
+    projectPath: Library\Artifacts\94\940ad0c1c64a4d5039c0e8c9f5ebdf67
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\94\9423da7ec536947edf766c244eca4b5a
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\94\9423da7ec536947edf766c244eca4b5a
+    projectPath: Library\Artifacts\94\9423da7ec536947edf766c244eca4b5a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\96\968e819a329093676eff1cccf9a35093
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\96\968e819a329093676eff1cccf9a35093
+    projectPath: Library\Artifacts\96\968e819a329093676eff1cccf9a35093
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\9b\9b433b0ba39b9cec26de2006c0f3615a
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\9b\9b433b0ba39b9cec26de2006c0f3615a
+    projectPath: Library\Artifacts\9b\9b433b0ba39b9cec26de2006c0f3615a
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\9d\9d36237c45fdf25392ab5a09f3c1365e
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\9d\9d36237c45fdf25392ab5a09f3c1365e
+    projectPath: Library\Artifacts\9d\9d36237c45fdf25392ab5a09f3c1365e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\a1\a1cdae228e7bab8aaa39ae94f598dcf7
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\a1\a1cdae228e7bab8aaa39ae94f598dcf7
+    projectPath: Library\Artifacts\a1\a1cdae228e7bab8aaa39ae94f598dcf7
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\a4\a4f3909d929b607c6a1c722489d275de
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\a4\a4f3909d929b607c6a1c722489d275de
+    projectPath: Library\Artifacts\a4\a4f3909d929b607c6a1c722489d275de
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\a8\a8f37a4d190622e4a8fd305a190ad21b
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\a8\a8f37a4d190622e4a8fd305a190ad21b
+    projectPath: Library\Artifacts\a8\a8f37a4d190622e4a8fd305a190ad21b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\ab\abac339022bf918135de115fbdb5a69b
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\ab\abac339022bf918135de115fbdb5a69b
+    projectPath: Library\Artifacts\ab\abac339022bf918135de115fbdb5a69b
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -62,11 +524,95 @@ MonoBehaviour:
     fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\ab\abe51ff40b1f6d1552301b22b47d722b
     projectPath: Library\Artifacts\ab\abe51ff40b1f6d1552301b22b47d722b
     originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\ac\acf352b9741c86d81bd362cbf4d4b1e1
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\ac\acf352b9741c86d81bd362cbf4d4b1e1
+    projectPath: Library\Artifacts\ac\acf352b9741c86d81bd362cbf4d4b1e1
+    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Library\Artifacts\c6\c61e14e6b7e364ac7f53664fa44f37f5
-    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\c6\c61e14e6b7e364ac7f53664fa44f37f5
-    projectPath: Library\Artifacts\c6\c61e14e6b7e364ac7f53664fa44f37f5
+  - path: Library\Artifacts\af\afca9cbfa14cbd7c44501d2d62e872bd
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\af\afca9cbfa14cbd7c44501d2d62e872bd
+    projectPath: Library\Artifacts\af\afca9cbfa14cbd7c44501d2d62e872bd
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\b2\b220438d142181831fb9332dd5ed1c8f
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\b2\b220438d142181831fb9332dd5ed1c8f
+    projectPath: Library\Artifacts\b2\b220438d142181831fb9332dd5ed1c8f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\b3\b3a18bc6eaa7e05075f399860a8eb1ba
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\b3\b3a18bc6eaa7e05075f399860a8eb1ba
+    projectPath: Library\Artifacts\b3\b3a18bc6eaa7e05075f399860a8eb1ba
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\b4\b499faba3dd2caaeefbca622713644fe
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\b4\b499faba3dd2caaeefbca622713644fe
+    projectPath: Library\Artifacts\b4\b499faba3dd2caaeefbca622713644fe
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\b6\b6589df648a238506e095ad29b01dd4f
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\b6\b6589df648a238506e095ad29b01dd4f
+    projectPath: Library\Artifacts\b6\b6589df648a238506e095ad29b01dd4f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\be\be692e020ab7d622c42d437954623308
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\be\be692e020ab7d622c42d437954623308
+    projectPath: Library\Artifacts\be\be692e020ab7d622c42d437954623308
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\bf\bfa5958d18cc4b5383e8e2de32ed9b31
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\bf\bfa5958d18cc4b5383e8e2de32ed9b31
+    projectPath: Library\Artifacts\bf\bfa5958d18cc4b5383e8e2de32ed9b31
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\c0\c05c63d67ca340771c16e9b47ef3a676
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\c0\c05c63d67ca340771c16e9b47ef3a676
+    projectPath: Library\Artifacts\c0\c05c63d67ca340771c16e9b47ef3a676
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\c5\c5d2689d5a8555010a8f9263002b9db9
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\c5\c5d2689d5a8555010a8f9263002b9db9
+    projectPath: Library\Artifacts\c5\c5d2689d5a8555010a8f9263002b9db9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\cd\cd5ee1368b9bbe11369c3e97322a21c2
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\cd\cd5ee1368b9bbe11369c3e97322a21c2
+    projectPath: Library\Artifacts\cd\cd5ee1368b9bbe11369c3e97322a21c2
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\cd\cd85a11474c3cbf5000c104399296799
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\cd\cd85a11474c3cbf5000c104399296799
+    projectPath: Library\Artifacts\cd\cd85a11474c3cbf5000c104399296799
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\d5\d532dcc3149a7bff93450f0809e59257
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\d5\d532dcc3149a7bff93450f0809e59257
+    projectPath: Library\Artifacts\d5\d532dcc3149a7bff93450f0809e59257
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\d7\d724a945643ef33cd5425b7600bd8f5f
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\d7\d724a945643ef33cd5425b7600bd8f5f
+    projectPath: Library\Artifacts\d7\d724a945643ef33cd5425b7600bd8f5f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\d8\d8949bd1cd2c7e722764d1f937e7d268
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\d8\d8949bd1cd2c7e722764d1f937e7d268
+    projectPath: Library\Artifacts\d8\d8949bd1cd2c7e722764d1f937e7d268
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -74,11 +620,131 @@ MonoBehaviour:
     fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\d8\d8a2925e0eead205662c115e137826b7
     projectPath: Library\Artifacts\d8\d8a2925e0eead205662c115e137826b7
     originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\dc\dc189234aadcf9b8b49469350514ad68
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\dc\dc189234aadcf9b8b49469350514ad68
+    projectPath: Library\Artifacts\dc\dc189234aadcf9b8b49469350514ad68
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\dc\dc7a6086484b68d2028572f4700e2b97
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\dc\dc7a6086484b68d2028572f4700e2b97
+    projectPath: Library\Artifacts\dc\dc7a6086484b68d2028572f4700e2b97
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\dd\dde828f726a044227a6a411e78968db6
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\dd\dde828f726a044227a6a411e78968db6
+    projectPath: Library\Artifacts\dd\dde828f726a044227a6a411e78968db6
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\df\df7294e39645448c6fdb665ee39d3d4c
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\df\df7294e39645448c6fdb665ee39d3d4c
+    projectPath: Library\Artifacts\df\df7294e39645448c6fdb665ee39d3d4c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\e4\e49fa7cc57103fc210a45f337e7705d8
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\e4\e49fa7cc57103fc210a45f337e7705d8
+    projectPath: Library\Artifacts\e4\e49fa7cc57103fc210a45f337e7705d8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\e5\e554aae1a7be0709f4c9a8fea51817c3
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\e5\e554aae1a7be0709f4c9a8fea51817c3
+    projectPath: Library\Artifacts\e5\e554aae1a7be0709f4c9a8fea51817c3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\e6\e6354e29c86b8aa20b4cd76116c0c99e
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\e6\e6354e29c86b8aa20b4cd76116c0c99e
+    projectPath: Library\Artifacts\e6\e6354e29c86b8aa20b4cd76116c0c99e
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\e8\e805ba98fbaec0b3bd018e0a822f78c6
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\e8\e805ba98fbaec0b3bd018e0a822f78c6
+    projectPath: Library\Artifacts\e8\e805ba98fbaec0b3bd018e0a822f78c6
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\e8\e8a08ee17f56014c64e1253b834c500f
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\e8\e8a08ee17f56014c64e1253b834c500f
+    projectPath: Library\Artifacts\e8\e8a08ee17f56014c64e1253b834c500f
+    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
   - path: Library\Artifacts\ea\eae50791a655bbc0875c1c556556b9cf
     fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\ea\eae50791a655bbc0875c1c556556b9cf
     projectPath: Library\Artifacts\ea\eae50791a655bbc0875c1c556556b9cf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\ec\ec37fcf682d89a13989e3e5aac8ae666
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\ec\ec37fcf682d89a13989e3e5aac8ae666
+    projectPath: Library\Artifacts\ec\ec37fcf682d89a13989e3e5aac8ae666
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\f2\f25a2551ff145a4b9419df8b11d71b61
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\f2\f25a2551ff145a4b9419df8b11d71b61
+    projectPath: Library\Artifacts\f2\f25a2551ff145a4b9419df8b11d71b61
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\f4\f48d31e7fef40654a698ebf925c8888b
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\f4\f48d31e7fef40654a698ebf925c8888b
+    projectPath: Library\Artifacts\f4\f48d31e7fef40654a698ebf925c8888b
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\f5\f5bb84efcd0df4dfcbdde77153257114
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\f5\f5bb84efcd0df4dfcbdde77153257114
+    projectPath: Library\Artifacts\f5\f5bb84efcd0df4dfcbdde77153257114
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\f6\f613a2cdfabf5d7607eaf5138f4dbb10
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\f6\f613a2cdfabf5d7607eaf5138f4dbb10
+    projectPath: Library\Artifacts\f6\f613a2cdfabf5d7607eaf5138f4dbb10
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\f8\f817b9e89676ff54fb5a992eebc98110
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\f8\f817b9e89676ff54fb5a992eebc98110
+    projectPath: Library\Artifacts\f8\f817b9e89676ff54fb5a992eebc98110
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\f9\f90e04310058dd9ecf5bb9c7fc3bb34d
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\f9\f90e04310058dd9ecf5bb9c7fc3bb34d
+    projectPath: Library\Artifacts\f9\f90e04310058dd9ecf5bb9c7fc3bb34d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\fb\fb3dabe5c86c2d32c0be8a1c300d01c5
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\fb\fb3dabe5c86c2d32c0be8a1c300d01c5
+    projectPath: Library\Artifacts\fb\fb3dabe5c86c2d32c0be8a1c300d01c5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\fd\fda856f32aaea2dbe03ef11cd5691709
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\fd\fda856f32aaea2dbe03ef11cd5691709
+    projectPath: Library\Artifacts\fd\fda856f32aaea2dbe03ef11cd5691709
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\fd\fdc804e7ec31bffb75aba33745ed38f8
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\fd\fdc804e7ec31bffb75aba33745ed38f8
+    projectPath: Library\Artifacts\fd\fdc804e7ec31bffb75aba33745ed38f8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\ff\ff00ed0b55d69b9ff5d79bec1e7cb300
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\Artifacts\ff\ff00ed0b55d69b9ff5d79bec1e7cb300
+    projectPath: Library\Artifacts\ff\ff00ed0b55d69b9ff5d79bec1e7cb300
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -88,9 +754,51 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: Library\gfu\cache\branches.yaml
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\gfu\cache\gitlocks.yaml
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\gfu\cache\gitlog.yaml
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\gfu\cache\gitstatusentries.yaml
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library\gfu\cache\gituser.yaml
     fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\gfu\cache\gituser.yaml
     projectPath: Library\gfu\cache\gituser.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\gfu\cache\repoinfo.yaml
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\SceneVisibilityState.asset
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\SceneVisibilityState.asset
+    projectPath: Library\SceneVisibilityState.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -100,21 +808,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
     fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\ShaderCache\EditorEncounteredVariants
-    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\ShaderCache\EditorEncounteredVariants
-    projectPath: Library\ShaderCache\EditorEncounteredVariants
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -124,21 +826,75 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Library\StateCache\Hierarchy\ac5488-6a9cf32f4053f8645a.json
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\StateCache\Hierarchy\ac5488-6a9cf32f4053f8645a.json
+    projectPath: Library\StateCache\Hierarchy\ac5488-6a9cf32f4053f8645a.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\StateCache\Hierarchy\ac5488-mainStage.json
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\StateCache\Hierarchy\ac5488-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\ac5488-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\StateCache\SceneView\fa7296-6a9cf32f4053f8645a.json
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\StateCache\SceneView\fa7296-6a9cf32f4053f8645a.json
+    projectPath: Library\StateCache\SceneView\fa7296-6a9cf32f4053f8645a.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\StateCache\SceneView\fa7296-mainStage.json
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Library\StateCache\SceneView\fa7296-mainStage.json
+    projectPath: Library\StateCache\SceneView\fa7296-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Temp\__Backupscenes\0.backup
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Temp\__Backupscenes\0.backup
+    projectPath: Temp\__Backupscenes\0.backup
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Temp\UnityLockfile
     fullPath: E:\GitHub\Of-Bow-and-Arrow\Temp\UnityLockfile
     projectPath: Temp\UnityLockfile
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-0afbbf9d0f76d23449d16bed32f03933
-    fullPath: E:\GitHub\Of-Bow-and-Arrow\Temp\UnityTempFile-0afbbf9d0f76d23449d16bed32f03933
-    projectPath: Temp\UnityTempFile-0afbbf9d0f76d23449d16bed32f03933
+  - path: Temp\UnityTempFile-02ea3e888ef037c4d9666b5677f4057a
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Temp\UnityTempFile-02ea3e888ef037c4d9666b5677f4057a
+    projectPath: Temp\UnityTempFile-02ea3e888ef037c4d9666b5677f4057a
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-24470083fe4bd404b99f538e77cd3fdb
-    fullPath: E:\GitHub\Of-Bow-and-Arrow\Temp\UnityTempFile-24470083fe4bd404b99f538e77cd3fdb
-    projectPath: Temp\UnityTempFile-24470083fe4bd404b99f538e77cd3fdb
+  - path: Temp\UnityTempFile-05cc5342e0a151c49ae264e01c063b60
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Temp\UnityTempFile-05cc5342e0a151c49ae264e01c063b60
+    projectPath: Temp\UnityTempFile-05cc5342e0a151c49ae264e01c063b60
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Temp\UnityTempFile-711860e0041f97d4ab29dfa6197e6ebc
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Temp\UnityTempFile-711860e0041f97d4ab29dfa6197e6ebc
+    projectPath: Temp\UnityTempFile-711860e0041f97d4ab29dfa6197e6ebc
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Temp\UnityTempFile-755ffc27e70c33444bd828a4a54902f5
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Temp\UnityTempFile-755ffc27e70c33444bd828a4a54902f5
+    projectPath: Temp\UnityTempFile-755ffc27e70c33444bd828a4a54902f5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Temp\UnityTempFile-87486b05dde33ed45be0ea255b254951
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Temp\UnityTempFile-87486b05dde33ed45be0ea255b254951
+    projectPath: Temp\UnityTempFile-87486b05dde33ed45be0ea255b254951
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Temp\UnityTempFile-f95408370ef708e4aacb72ad64e6d077
+    fullPath: E:\GitHub\Of-Bow-and-Arrow\Temp\UnityTempFile-f95408370ef708e4aacb72ad64e6d077
+    projectPath: Temp\UnityTempFile-f95408370ef708e4aacb72ad64e6d077
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
