@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-04-14T18:17:23.799+03:00
-  initializedAtString: 2020-04-14T18:17:23.799+03:00
+  lastUpdatedAtString: 2020-04-14T18:35:02.608+03:00
+  initializedAtString: 2020-04-14T18:35:02.608+03:00
   currentGitRemote:
     name: origin
     url: https://github.com/Andrei243/Of-Bow-and-Arrow.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: robert-branch-2D
-    tracking: origin/robert-branch-2D
+    name: master
+    tracking: origin/master
   currentConfigBranch:
-    name: robert-branch-2D
+    name: master
     remote:
       name: origin
       url: https://github.com/Andrei243/Of-Bow-and-Arrow.git
-    trackingBranch: rober-branch-2D
+    trackingBranch: master
   currentConfigRemote:
     name: origin
     url: https://github.com/Andrei243/Of-Bow-and-Arrow.git

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-04-14T18:17:25.975+03:00
-  initializedAtString: 2020-04-14T18:17:25.775+03:00
+  lastUpdatedAtString: 2020-04-14T18:35:08.987+03:00
+  initializedAtString: 2020-04-14T18:35:08.977+03:00
   localBranches:
   - name: master
     tracking: origin/master
@@ -26,6 +26,8 @@ MonoBehaviour:
   - name: origin/calin-branch
     tracking: '[None]'
   - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/master
     tracking: '[None]'
   - name: origin/rober-branch-2D
     tracking: '[None]'
@@ -67,6 +69,7 @@ MonoBehaviour:
     - Values:
       - calin-branch
       - HEAD
+      - master
       - rober-branch-2D
       - robert-branch-3D
     subKeyValues:
@@ -77,6 +80,11 @@ MonoBehaviour:
           url: https://github.com/Andrei243/Of-Bow-and-Arrow.git
         trackingBranch: 
       - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/Andrei243/Of-Bow-and-Arrow.git
+        trackingBranch: 
+      - name: master
         remote:
           name: origin
           url: https://github.com/Andrei243/Of-Bow-and-Arrow.git
