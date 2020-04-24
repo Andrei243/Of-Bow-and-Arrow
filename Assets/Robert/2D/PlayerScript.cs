@@ -96,7 +96,7 @@ public class PlayerScript : MonoBehaviour
 
     void Actions()
     {
-
+        //Shoot
         if (Input.GetMouseButton(0) && reloadTimer <= 0)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -119,8 +119,10 @@ public class PlayerScript : MonoBehaviour
 
         }
 
+        //MOVEMENT
         velocity = Vector2.zero;
 
+        //Left
         if (Input.GetKey(KeyCode.A))
         {
             if(facingRight)
@@ -129,7 +131,7 @@ public class PlayerScript : MonoBehaviour
             velocity += leftSpeed;
         }
 
-
+        //Right
         if (Input.GetKey(KeyCode.D))
         {
             if (!facingRight)
@@ -138,6 +140,7 @@ public class PlayerScript : MonoBehaviour
             velocity += rightSpeed;
         }
 
+        //Jump
         if (Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
             velocity += jumpSpeed;

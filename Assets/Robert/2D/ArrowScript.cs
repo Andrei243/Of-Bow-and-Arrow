@@ -13,4 +13,6 @@ public class ArrowScript : MonoBehaviour
         // Move the arrow
         transform.position += transform.right * Time.deltaTime * speed;
     }
+
+
 }

@@ -71,6 +71,8 @@
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
     <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Robert\2D\ArrowScript.cs" />
+    <Compile Include="Assets\Robert\2D\DemonScript.cs" />
+    <Compile Include="Assets\Robert\2D\ImpScript.cs" />
     <Compile Include="Assets\Robert\2D\PlayerScript.cs" />
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <Reference Include="Unity.Timeline.Editor">
