@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 56905409}
   - component: {fileID: 56905408}
   - component: {fileID: 56905411}
+  - component: {fileID: 56905412}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -224,6 +225,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &56905412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56905407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ae77ce74c586614a93fabd66e4f763a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deadEnemies: 
+  enemies: []
 --- !u!1 &69242325
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,7 +329,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &722643764
 GameObject:
@@ -420,9 +435,9 @@ Transform:
   m_LocalScale: {x: 20, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1103967958
+--- !u!1001 &1508472718
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -442,12 +457,12 @@ PrefabInstance:
     - target: {fileID: 7849542579552206654, guid: 6a9cf32f4053f8645a74c2f44863b2a9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.8117766
       objectReference: {fileID: 0}
     - target: {fileID: 7849542579552206654, guid: 6a9cf32f4053f8645a74c2f44863b2a9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.62
+      value: 1.3983532
       objectReference: {fileID: 0}
     - target: {fileID: 7849542579552206654, guid: 6a9cf32f4053f8645a74c2f44863b2a9,
         type: 3}
@@ -477,7 +492,7 @@ PrefabInstance:
     - target: {fileID: 7849542579552206654, guid: 6a9cf32f4053f8645a74c2f44863b2a9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7849542579552206654, guid: 6a9cf32f4053f8645a74c2f44863b2a9,
         type: 3}

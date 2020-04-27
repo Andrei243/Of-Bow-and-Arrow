@@ -44,10 +44,11 @@ GameObject:
   - component: {fileID: 443171137635220634}
   - component: {fileID: 3659572931429314154}
   - component: {fileID: 8185305050930499352}
-  - component: {fileID: 6068847138810714304}
+  - component: {fileID: -916572922163348316}
+  - component: {fileID: 6039863841000136080}
   m_Layer: 0
   m_Name: Imp
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -200,7 +201,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6068847138810714304
+--- !u!114 &-916572922163348316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -209,13 +210,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 4059888598705475965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68523b993b04c5b4c97b2f8c54c3de4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d01e81ea122b7a4db297fe248b54021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   arrowTag: PlayerArrow
   moveSpeed: 0.7
+  health: 1
+  reloadTime: 0.5
   RightPatrolPoint: {fileID: 953700729846250652}
   hitArea: {fileID: 5188122628988101576}
+  ID: 0
+  isDead: 0
+--- !u!114 &6039863841000136080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4059888598705475965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910275a33579dfa46bfa03a0ac440733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMelee: 1
+  isRanged: 0
 --- !u!1 &5188122628988101576
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,7 +327,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.1242591, y: -0.094174206}

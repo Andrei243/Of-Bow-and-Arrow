@@ -10,7 +10,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{ED242184-B7A7-2D07-D51F-8285390294FB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -54,6 +55,9 @@
     <UnityVersion>2019.3.4f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>D:\Program Files\Unity\2019.3.4f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -62,6 +66,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Caln\Scripts\SaveLoad.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
@@ -71,10 +76,14 @@
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
     <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Robert\2D\ArrowScript.cs" />
-    <Compile Include="Assets\Robert\2D\DemonScript.cs" />
-    <Compile Include="Assets\Robert\2D\ImpScript.cs" />
+    <Compile Include="Assets\Robert\2D\EnemyArrowScript.cs" />
+    <Compile Include="Assets\Robert\2D\EnemyManager.cs" />
+    <Compile Include="Assets\Robert\2D\GameManager.cs" />
+    <Compile Include="Assets\Robert\2D\MeleeEnemyScript.cs" />
     <Compile Include="Assets\Robert\2D\PlayerScript.cs" />
+    <Compile Include="Assets\Robert\2D\RangedEnemyScript.cs" />
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
+    <None Include="packages.config" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/GitHub/Of-Bow-and-Arrow/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

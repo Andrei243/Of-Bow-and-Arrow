@@ -159,9 +159,20 @@ public class PlayerScript : MonoBehaviour
         facingRight = !playerSprite.flipX;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "EnemyArrow")
+        {
+            Destroy(collision.gameObject);
+            Die();
+        }
+    }
+
     public void Die()
     {
         Destroy(gameObject, anim.GetCurrentAnimatorStateInfo(0).length);
         anim.SetBool("dead", true);
+        GameObject.Find("Main Camera").GetComponent<SaveLoad>().playerDied();
+
     }
 }
