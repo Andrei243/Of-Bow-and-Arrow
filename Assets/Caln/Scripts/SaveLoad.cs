@@ -52,10 +52,16 @@ namespace Assets.Calin.Scripts
         public void saveJson()
         {
             string json = JsonUtility.ToJson(saveFile);
-            using (StreamWriter file = File.CreateText(@"./saveFile.json"))
+            if (!File.Exists("./saveFile.json"))
             {
-                JsonSerializer serializer = new JsonSerializer();
-                serializer.Serialize(file, json);
+                File.Create("./saveFile.json").Close();
+
+            }
+            using (StreamWriter file = new StreamWriter("./saveFile.json"))
+            {
+                File.WriteAllText("./saveFile.json", json);
+                file.WriteLine("./saveFile.json");
+                file.Close();
             }
         }
 
