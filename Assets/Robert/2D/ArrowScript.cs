@@ -28,16 +28,26 @@ public class ArrowScript : MonoBehaviour
         isPlatform = true;
         gameObject.AddComponent<Rigidbody2D>();
         var rig = this.gameObject.GetComponent<Rigidbody2D>();
+        transform.position += new Vector3(0.01f, 0, 0);
         rig.SetRotation(Quaternion.identity);
         rig.freezeRotation = true;
         rig.constraints = RigidbodyConstraints2D.FreezeAll;
         var ground = LayerMask.NameToLayer("Ground");
         gameObject.layer = ground;
         gameObject.AddComponent<PlatformEffector2D>();
-        var boxCollider = gameObject.GetComponent<BoxCollider2D>();
-        boxCollider.usedByEffector = true;
-        boxCollider.isTrigger = false;
+        gameObject.AddComponent<BoxCollider2D>();
+        var boxCollider = gameObject.GetComponents<BoxCollider2D>();
+        boxCollider[0].usedByEffector = true;
+        boxCollider[0].isTrigger = false;
+        boxCollider[1].isTrigger = true;
 
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(isPlatform && collision.gameObject.tag == "Flammable")
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
