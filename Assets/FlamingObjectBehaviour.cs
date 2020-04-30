@@ -6,12 +6,17 @@ using UnityEngine;
 public class FlamingObjectBehaviour : MonoBehaviour
 {
     public int SecondsFromBurntTillDestroyed = 10;
+    public GameObject FireParticle;
+    public GameObject WaterParticle;
     // Start is called before the first frame update
     private ObjectState state;
     private DateTime MomentBurnt;
-    void Start()
+    public void Start()
     {
+        FireParticle.SetActive(false);
+        WaterParticle.SetActive(false);
         state = ObjectState.Normal;
+
     }
     public void SetOnFire()
     {
@@ -20,9 +25,7 @@ public class FlamingObjectBehaviour : MonoBehaviour
             case ObjectState.Normal:
                 state = ObjectState.OnFire;
                 MomentBurnt = DateTime.Now;
-                this.gameObject.AddComponent<ParticleSystem>();
-                var particleSystem = this.gameObject.GetComponent<ParticleSystem>();
-                
+                FireParticle.SetActive(true);
                 break;
         }
     }
@@ -32,10 +35,10 @@ public class FlamingObjectBehaviour : MonoBehaviour
         switch (state)
         {
             case ObjectState.Normal:
-                state = ObjectState.Wet;
-                break;
             case ObjectState.OnFire:
-                state = ObjectState.OnFire;
+                state = ObjectState.Wet;
+                FireParticle.SetActive(false);
+                WaterParticle.SetActive(true);
                 break;
 
         }

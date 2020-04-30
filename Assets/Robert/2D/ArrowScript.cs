@@ -13,9 +13,16 @@ public class ArrowScript : MonoBehaviour
 {
     //The arrow has the right orientation
     public float speed = 1;
+    public GameObject FireParticle;
+    public GameObject WaterParticle;
     private ObjectState arrowState = ObjectState.Normal;
     private bool isPlatform = false;
 
+    public void Start()
+    {
+        FireParticle.SetActive(false);
+        WaterParticle.SetActive(false);
+    }
     void Update()
     {
         if (!isPlatform)
@@ -42,9 +49,36 @@ public class ArrowScript : MonoBehaviour
         boxCollider[1].isTrigger = true;
 
     }
+
+    private void SetOnFire()
+    {
+        if (arrowState != ObjectState.Wet)
+        {
+            arrowState = ObjectState.OnFire;
+            if (FireParticle != null)
+            {
+
+                FireParticle.SetActive(true);
+            }
+        }
+    }
+
+    private void WetTheArrow()
+    {
+        arrowState = ObjectState.Wet;
+        if (FireParticle != null)
+        {
+            FireParticle.SetActive(false);
+        }
+        if (WaterParticle!=null)
+        {
+            WaterParticle.SetActive(true);
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(isPlatform && collision.gameObject.tag == "Flammable")
+        if (isPlatform && collision.gameObject.tag == "Flammable")
         {
             Destroy(gameObject);
         }
@@ -59,13 +93,13 @@ public class ArrowScript : MonoBehaviour
                 switch (arrowState)
                 {
                     case ObjectState.Normal:
-                        arrowState = ObjectState.OnFire;
+                        SetOnFire();
                         break;
                 }
             }
             else if (collision.gameObject.tag == "Wet")
             {
-                arrowState = ObjectState.Wet;
+                WetTheArrow();
             }
             else if (collision.gameObject.tag == "Flammable")
             {
@@ -74,9 +108,11 @@ public class ArrowScript : MonoBehaviour
                 {
                     case ObjectState.OnFire:
                         flameBehaviour.SetOnFire();
+                        Destroy(gameObject);
                         break;
                     case ObjectState.Wet:
                         flameBehaviour.WetTheWall();
+                        Destroy(gameObject);
                         break;
                     case ObjectState.Normal:
                         FixPlatform();
@@ -99,12 +135,6 @@ public class ArrowScript : MonoBehaviour
             else if (collision.gameObject.tag == "Floor")
             {
                 Destroy(this.gameObject);
-            }
-        }
-        else
-        {
-            if (collision.gameObject.tag == "Player")
-            {
             }
         }
     }
