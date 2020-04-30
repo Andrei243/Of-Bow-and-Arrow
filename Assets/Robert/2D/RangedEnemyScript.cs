@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RangedEnemyScript : MonoBehaviour
 {
+    public string[] wallTags = { "Flammable" };
     public string arrowTag = "PlayerArrow";
     public float moveSpeed = 0.5f;
     public int health = 3;
@@ -49,6 +50,7 @@ public class RangedEnemyScript : MonoBehaviour
 
     private void Movement()
     {
+        //Checks if the enemy has reached a patrol point flips him if so
         if (facingRight)
         {
             //Check if the enemy reached his right patrol point
@@ -70,6 +72,7 @@ public class RangedEnemyScript : MonoBehaviour
                 velocity = -moveSpeed;
         }
 
+        //If the enemy is not dead or attacking then he can move
         if (!isDead && !isAttacking)
             enemyRigidbody.velocity = new Vector2(velocity, 0);
         else
@@ -78,6 +81,7 @@ public class RangedEnemyScript : MonoBehaviour
     }
     private void Action()
     {
+        //If the player is in the enemy sight then start the attack animation
         if (refreshTimer > 0)
             refreshTimer -= Time.deltaTime;
 
@@ -92,6 +96,9 @@ public class RangedEnemyScript : MonoBehaviour
 
     void Attack()
     {
+        //Called by an Action Event on the frame of the actual attack in "shoot" animation.
+        //If the player is still in the sight of the enemy then calculate the angle from the enemy to the player and shoot an arrow with that angle
+
         isAttacking = false;
         Vector3 player = GameObject.Find("Player").transform.position;
         float angle = Mathf.Atan2(player.y - transform.position.y, player.x - transform.position.x) * Mathf.Rad2Deg;
@@ -109,6 +116,17 @@ public class RangedEnemyScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //If the enemy touches a wall, flip him
+        for (int i =0; i< wallTags.Length;i++)
+            if (collision.gameObject.tag.Equals(wallTags[i]))
+            {
+                if (facingRight)
+                    Flip(true);
+                else
+                    Flip(false);
+            }
+
+        //If the enemy touches a player arrow HP goes down, at 0 HP he dies
         if (collision.gameObject.tag.Equals(arrowTag))
         {
             Destroy(collision.gameObject);
@@ -131,6 +149,7 @@ public class RangedEnemyScript : MonoBehaviour
 
     void Flip(bool flip)
     {
+        //Flip the enemy to the opposite direction he is facing 
         sprite.flipX = flip;
         facingRight = !flip;
         velocity = 0;

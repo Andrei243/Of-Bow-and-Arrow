@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MeleeEnemyScript : MonoBehaviour
 {
+    public string[] wallTags = { "Flammable" };
     public string arrowTag = "PlayerArrow";
     public float moveSpeed = 0.5f;
     public int health = 3;
@@ -48,6 +49,7 @@ public class MeleeEnemyScript : MonoBehaviour
 
     private void Movement()
     {
+        //Checks if the enemy has reached a patrol point flips him if so
         if (facingRight)
         {
             //Check if the enemy reached his right patrol point
@@ -69,14 +71,18 @@ public class MeleeEnemyScript : MonoBehaviour
                 velocity = -moveSpeed;
         }
 
+        //If the enemy is not dead or attacking then he can move
         if (!isDead && !isAttacking)
             enemyRigidbody.velocity = new Vector2(velocity, 0);
         else
             enemyRigidbody.velocity = Vector2.zero;
 
     }
+
+
     private void Action()
     {
+        //If the player is in the enemy sight then start the attack animation
         if (refreshTimer > 0)
             refreshTimer -= Time.deltaTime;
 
@@ -90,14 +96,27 @@ public class MeleeEnemyScript : MonoBehaviour
 
     void Attack()
     {
+        //Called by an Action Event on the frame of the actual attack in "attack" animation.
+        //If the player is still in the sight of the enemy then kill the player
         isAttacking = false;
 
         if (hitAreaCol.IsTouchingLayers(playerLayer))
             GameObject.Find("Player").GetComponent<PlayerScript>().Die();
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //If the enemy touches a wall, flip him
+        for(int i =0;i<wallTags.Length;i++)
+            if(collision.gameObject.tag.Equals(wallTags[i]))
+            {
+                if (facingRight)
+                    Flip(true);
+                else
+                    Flip(false);
+            }
 
+        //If the enemy touches a player arrow HP goes down, at 0 HP he dies
         if (collision.gameObject.tag.Equals(arrowTag))
         {
             Destroy(collision.gameObject);
@@ -120,6 +139,7 @@ public class MeleeEnemyScript : MonoBehaviour
     }
     void Flip(bool flip)
     {
+        //Flip the enemy to the opposite direction he is facing 
         sprite.flipX = flip;
         facingRight = !flip;
         velocity = 0;

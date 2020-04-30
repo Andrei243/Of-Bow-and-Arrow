@@ -11,12 +11,11 @@ public class PlayerScript : MonoBehaviour
     public float reloadSpeed = 5;
     public GameObject arrow;
     public GameObject cameraP;
+    public BoxCollider2D playerFeetCollider, playerBodyCollider;
 
     private GameObject Player;
     private Transform playerTransform;
     private Rigidbody2D playerRigidbody;
-    private BoxCollider2D playerBoxCollider;
-    private CircleCollider2D playerCircleCollider;
     private SpriteRenderer playerSprite;
     private Animator anim;
 
@@ -33,8 +32,6 @@ public class PlayerScript : MonoBehaviour
         Player = gameObject;
         playerTransform = Player.transform;
         playerRigidbody = Player.GetComponent<Rigidbody2D>();
-        playerBoxCollider = Player.GetComponent<BoxCollider2D>();
-        playerCircleCollider = Player.GetComponent<CircleCollider2D>();
         playerSprite = Player.GetComponent<SpriteRenderer>();
         anim = Player.GetComponent<Animator>();
 
@@ -65,11 +62,13 @@ public class PlayerScript : MonoBehaviour
 
     void State()
     {
-        if (playerCircleCollider.IsTouchingLayers(groundLayer))
+        //Check if the player is on the ground
+        if (playerFeetCollider.IsTouchingLayers(groundLayer))
             if (!isGrounded)
             {
                 isGrounded = true;
             }
+        //Check bow reload time 
         if (reloadTimer > 0)
             reloadTimer -= Time.deltaTime;
     }
@@ -88,7 +87,6 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.D))
             anim.SetBool("running", false);
 
-
     }
 
     IEnumerator Shoot(float time, float angle)
@@ -103,6 +101,7 @@ public class PlayerScript : MonoBehaviour
         //Shoot
         if (Input.GetMouseButton(0) && reloadTimer <= 0)
         {
+            //Get the angle angle of the arrow
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             float angle = 0;
@@ -111,6 +110,7 @@ public class PlayerScript : MonoBehaviour
             if (angle < 0)
                 angle = 360 + angle;
 
+            //Flip the player if he shoots in the opposite direction to the one facing 
             if (facingRight && angle > 90 && angle < 270)
                 Flip(true);
 
@@ -145,16 +145,14 @@ public class PlayerScript : MonoBehaviour
         }
 
         //Jump
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.W) && isGrounded )
         {
             velocity += jumpSpeed;
             isGrounded = false;
         }
 
+        //Apply the movement force
         playerRigidbody.velocity = new Vector2(velocity.x, velocity.y + playerRigidbody.velocity.y);
-
-        
-        
     }
 
     void Flip(bool flip)

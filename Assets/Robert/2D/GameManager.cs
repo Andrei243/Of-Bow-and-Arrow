@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     void SetEnemyID()
     {
+        //Sets all the enemies IDs in the order they are in the scene hierarchy
         enemies =new List<GameObject>(GameObject.FindGameObjectsWithTag("Enemy"));
 
         for(int i = 0;i<enemies.Count;i++)
