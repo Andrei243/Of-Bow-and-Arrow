@@ -14,12 +14,15 @@ public class GameManager : MonoBehaviour
     private int ID;
     private int IDCheckpoint;
 
+    public Texture2D cursor;
+
     void Start()
     {
         ID = 1;
         IDCheckpoint = 1;
         SetEnemyID();
         loadJson();
+        Cursor.SetCursor(cursor, Vector2.zero, CursorMode.ForceSoftware);
     }
 
     void SetEnemyID()
