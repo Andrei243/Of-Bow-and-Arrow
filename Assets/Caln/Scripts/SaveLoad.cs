@@ -33,13 +33,15 @@ namespace Assets.Calin.Scripts
             
         }
 
-        public void NewCheckpoint(int checkpointId)
+        public bool NewCheckpoint(int checkpointId)
         {
-            if (checkpointId > saveFile.playerCheckpoint)
+            if (checkpointId != saveFile.playerCheckpoint)
             {
                 saveFile.playerCheckpoint = checkpointId;
                 saveJson();
+                return true;
             }
+            return false;
         }
 
         public void enemyDied(int enemyId)

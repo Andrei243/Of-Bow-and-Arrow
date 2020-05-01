@@ -51,7 +51,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         //Update the camera pos ( needs work)
-        cameraP.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y,cameraP.transform.position.z);
+        cameraP.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, cameraP.transform.position.z);
 
         //Update player state
         State();
@@ -91,7 +91,7 @@ public class PlayerScript : MonoBehaviour
 
     IEnumerator Shoot(float time, float angle)
     {
-         yield return new WaitForSeconds(time);
+        yield return new WaitForSeconds(time);
         Instantiate(arrow, playerTransform.position, Quaternion.Euler(0, 0, angle));
 
     }
@@ -129,7 +129,7 @@ public class PlayerScript : MonoBehaviour
         //Left
         if (Input.GetKey(KeyCode.A))
         {
-            if(facingRight)
+            if (facingRight)
                 Flip(true);
 
             velocity += leftSpeed;
@@ -140,12 +140,12 @@ public class PlayerScript : MonoBehaviour
         {
             if (!facingRight)
                 Flip(false);
-            
+
             velocity += rightSpeed;
         }
 
         //Jump
-        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space)) && isGrounded )
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space)) && isGrounded)
         {
             velocity += jumpSpeed;
             isGrounded = false;
@@ -173,7 +173,8 @@ public class PlayerScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Checkpoint")
         {
-            GameObject.Find("Main Camera").GetComponent<SaveLoad>().NewCheckpoint(collision.gameObject.GetComponent<CheckPointBehaviour>().ID);
+            var isNew = GameObject.Find("Main Camera").GetComponent<SaveLoad>().NewCheckpoint(collision.gameObject.GetComponent<CheckPointBehaviour>().ID);
+            if (isNew) { collision.gameObject.GetComponent<CheckPointBehaviour>().ActivateParticleSystem(); }
         }
     }
 
