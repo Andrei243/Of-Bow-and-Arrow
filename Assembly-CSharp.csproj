@@ -67,6 +67,7 @@
      <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\FlamingObjectBehaviour.cs" />
      <Compile Include="Assets\MainMenu.cs" />
+     <Compile Include="Assets\MusicScript.cs" />
      <Compile Include="Assets\Robert\2D\ArrowScript.cs" />
      <Compile Include="Assets\Robert\2D\EnemyArrowScript.cs" />
      <Compile Include="Assets\Robert\2D\EnemyManager.cs" />
