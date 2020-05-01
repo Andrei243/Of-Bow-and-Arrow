@@ -145,7 +145,7 @@ public class PlayerScript : MonoBehaviour
         }
 
         //Jump
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded )
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space)) && isGrounded )
         {
             velocity += jumpSpeed;
             isGrounded = false;
