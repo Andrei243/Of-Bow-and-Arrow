@@ -117,6 +117,11 @@ public class MeleeEnemyScript : MonoBehaviour
             }
 
         //If the enemy touches a player arrow HP goes down, at 0 HP he dies
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         if (collision.gameObject.tag.Equals(arrowTag))
         {
             Destroy(collision.gameObject);
@@ -125,6 +130,7 @@ public class MeleeEnemyScript : MonoBehaviour
             {
                 isDead = true;
                 anim.SetBool("dead", true);
+                Invoke("DestroyDemon", 2);
             }
             else
                 anim.SetTrigger("hit");
@@ -134,8 +140,7 @@ public class MeleeEnemyScript : MonoBehaviour
     void DestroyDemon()
     {
         GameObject.Find("Main Camera").GetComponent<GameManager>().AddDeadEnemy(ID);
-        gameObject.SetActive(false);
-       // Destroy(gameObject);
+        Destroy(gameObject);
     }
     void Flip(bool flip)
     {

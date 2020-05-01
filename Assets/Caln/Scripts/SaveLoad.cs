@@ -5,26 +5,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Calin.Scripts
 {
+
+
+    [Serializable]
+    internal class SaveObject
+    {
+        public SaveObject()
+        {
+            playerCheckpoint = 0;
+            deadEnemiesIds = new List<int>();
+        }
+        public int playerCheckpoint;
+        public List<int> deadEnemiesIds;
+    }
     class SaveLoad : MonoBehaviour
     {
-        public struct SaveObject
-        {
-            public SaveObject(int checkpoint, List<int> deadEnemies)
-            {
-                playerCheckpoint = checkpoint;
-                deadEnemiesIds = deadEnemies;
-            }
-            public int playerCheckpoint { get; set; }
-            public List<int> deadEnemiesIds { get; set; }
-        }
+        
         private SaveObject saveFile;
 
-        public SaveLoad()
+        public void Awake()
         {
-            saveFile = new SaveObject(0, new List<int>());
+            saveFile = new SaveObject();
+            
         }
 
         public void NewCheckpoint(int checkpointId)
@@ -32,7 +38,7 @@ namespace Assets.Calin.Scripts
             if (checkpointId > saveFile.playerCheckpoint)
             {
                 saveFile.playerCheckpoint = checkpointId;
-                saveFile.deadEnemiesIds.Clear();
+                saveJson();
             }
         }
 
@@ -45,7 +51,8 @@ namespace Assets.Calin.Scripts
         {
             //return player to checkpoint
             //reset enemies (saveFile.deadEmeniesIds)
-            saveFile.deadEnemiesIds.Clear();
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);//just need to reset the scene
         }
 
         public void saveJson()
@@ -53,26 +60,17 @@ namespace Assets.Calin.Scripts
             string json = JsonUtility.ToJson(saveFile);
             if (!File.Exists("./saveFile.json"))
             {
-                File.Create("./saveFile.json").Close();
-
-            }
-            using (StreamWriter file = new StreamWriter("./saveFile.json"))
-            {
-                File.WriteAllText("./saveFile.json", json);
-                file.WriteLine("./saveFile.json");
+                var file = File.Create("./saveFile.json");
                 file.Close();
             }
+            File.WriteAllText("./saveFile.json", json);
         }
 
-        public void loadJson()
+        public void SetStartSave(SaveObject obj)
         {
-            using (StreamReader r = new StreamReader("./saveFile.json"))
-            {
-                string json = r.ReadToEnd();
-                SaveObject save = JsonUtility.FromJson<SaveObject>(json);
-                saveFile.playerCheckpoint = save.playerCheckpoint;
-                saveFile.deadEnemiesIds.Clear();
-            }
+            saveFile = obj;
         }
+
+
     }
 }
