@@ -114,6 +114,22 @@ public class RangedEnemyScript : MonoBehaviour
         Instantiate(enemyArrow, transform.position, Quaternion.Euler(0, 0, angle));
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        string x =collision.tag;
+        if (collision.gameObject.tag.Equals(arrowTag))
+        {
+            Destroy(collision.gameObject);
+            health--;
+            if (health == 0)
+            {
+                isDead = true;
+                anim.SetBool("dead", true);
+                Invoke("DestroyDemon", 2);
+            }
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //If the enemy touches a wall, flip him
@@ -126,19 +142,7 @@ public class RangedEnemyScript : MonoBehaviour
                     Flip(false);
             }
 
-        //If the enemy touches a player arrow HP goes down, at 0 HP he dies
-        if (collision.gameObject.tag.Equals(arrowTag))
-        {
-            Destroy(collision.gameObject);
-            health--;
-            if (health == 0)
-            {
-                isDead = true;
-                anim.SetBool("dead", true);
-                DestroyDemon();
-            }
 
-        }
     }
 
     void DestroyDemon()

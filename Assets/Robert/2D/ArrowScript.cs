@@ -97,7 +97,7 @@ public class ArrowScript : MonoBehaviour
                         break;
                 }
             }
-            else if (collision.gameObject.tag == "Wet")
+            else if (collision.gameObject.tag =="Wet")
             {
                 WetTheArrow();
             }

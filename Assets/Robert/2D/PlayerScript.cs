@@ -50,7 +50,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         //Update the camera pos ( needs work)
-        cameraP.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, cameraP.transform.position.z);
+        cameraP.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y + 0.75f, cameraP.transform.position.z);
 
         //Update player state
         State();

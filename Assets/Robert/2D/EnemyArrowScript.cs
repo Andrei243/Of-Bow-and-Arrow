@@ -11,4 +11,15 @@ public class EnemyArrowScript : MonoBehaviour
     {
         transform.position += transform.right * Time.deltaTime * speed;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 8)
+            Destroy(gameObject);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 8)
+            Destroy(gameObject);
+    }
 }
