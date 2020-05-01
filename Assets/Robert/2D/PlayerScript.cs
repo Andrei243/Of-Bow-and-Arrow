@@ -169,6 +169,13 @@ public class PlayerScript : MonoBehaviour
             Die();
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Checkpoint")
+        {
+            GameObject.Find("Main Camera").GetComponent<SaveLoad>().NewCheckpoint(collision.gameObject.GetComponent<CheckPointBehaviour>().ID);
+        }
+    }
 
     public void Die()
     {

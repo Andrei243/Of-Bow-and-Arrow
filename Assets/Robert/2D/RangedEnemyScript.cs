@@ -135,6 +135,7 @@ public class RangedEnemyScript : MonoBehaviour
             {
                 isDead = true;
                 anim.SetBool("dead", true);
+                DestroyDemon();
             }
 
         }
