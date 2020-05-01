@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Caln/MenuScene.unity
+    guid: 6bdab5bec8fc705448101ad040a60ba6
+  - enabled: 1
+    path: Assets/Robert/2D/RobertScene.unity
+    guid: facb97aa6accb9d43ad225049e723b5b
   m_configObjects: {}
