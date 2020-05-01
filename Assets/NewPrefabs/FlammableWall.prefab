@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5503330713156594364}
   - component: {fileID: 7264086929510651996}
   - component: {fileID: 9165052605002781456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FlammableWall
   m_TagString: Flammable
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 598543962538974716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -57.177734, y: 46.05078, z: -112.94043}
-  m_LocalScale: {x: 0.5, y: 4, z: 4}
+  m_LocalScale: {x: 0.125, y: 1, z: 1}
   m_Children:
   - {fileID: 3246745606379135792}
   - {fileID: 8922829076344707004}
@@ -94,7 +94,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -108,7 +108,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.1, y: 1.1}
   m_EdgeRadius: 0
 --- !u!50 &7264086929510651996
 Rigidbody2D:
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8556e70d4ddfb740854f4209c98c0db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SecondsFromBurntTillDestroyed: 10
+  SecondsFromBurntTillDestroyed: 3
   FireParticle: {fileID: 6447005302328856849}
   WaterParticle: {fileID: 6731365204410857116}
 --- !u!1 &4411400917563968287

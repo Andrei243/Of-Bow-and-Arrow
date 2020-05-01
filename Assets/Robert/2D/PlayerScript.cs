@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-
     public float moveSpeed = 4;
     public float jumpForce = 8;
     public float reloadSpeed = 5;
@@ -161,20 +160,17 @@ public class PlayerScript : MonoBehaviour
         facingRight = !playerSprite.flipX;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "EnemyArrow")
-        {
-            Destroy(collision.gameObject);
-            Die();
-        }
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Checkpoint")
         {
             var isNew = GameObject.Find("Main Camera").GetComponent<SaveLoad>().NewCheckpoint(collision.gameObject.GetComponent<CheckPointBehaviour>().ID);
             if (isNew) { collision.gameObject.GetComponent<CheckPointBehaviour>().ActivateParticleSystem(); }
+        }
+        if (collision.gameObject.tag == "EnemyArrow")
+        {
+            Destroy(collision.gameObject);
+            Die();
         }
     }
 

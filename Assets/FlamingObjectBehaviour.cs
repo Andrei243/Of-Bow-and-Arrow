@@ -11,11 +11,13 @@ public class FlamingObjectBehaviour : MonoBehaviour
     // Start is called before the first frame update
     private ObjectState state;
     private DateTime MomentBurnt;
+    private List<GameObject> Flammables { get; set; }
     public void Start()
     {
         FireParticle.SetActive(false);
         WaterParticle.SetActive(false);
         state = ObjectState.Normal;
+        Flammables = new List<GameObject>();
 
     }
     public void SetOnFire()
@@ -26,6 +28,7 @@ public class FlamingObjectBehaviour : MonoBehaviour
                 state = ObjectState.OnFire;
                 MomentBurnt = DateTime.Now;
                 FireParticle.SetActive(true);
+                Flammables.ForEach(e => e.GetComponent<FlamingObjectBehaviour>().SetOnFire());
                 break;
         }
     }
@@ -54,4 +57,12 @@ public class FlamingObjectBehaviour : MonoBehaviour
             }
         }
     }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Flammable")
+        {
+            Flammables.Add(collision.gameObject);
+        }
+    }
+
 }

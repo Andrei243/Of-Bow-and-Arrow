@@ -25,4 +25,12 @@ public class CheckPointBehaviour : MonoBehaviour
     {
         
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            var gameObj = collision.gameObject;
+            Destroy(gameObj);
+        }
+    }
 }
